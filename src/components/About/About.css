@@ -1,0 +1,87 @@
+.about-img {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.container {
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.about-title {
+	color: wheat;
+	text-align: center;
+	font-family: "Delius Swash Caps", cursive;
+	font-size: 2.1rem;
+}
+.about-paraf {
+	color: white;
+	width: 80%;
+	margin: 0 auto;
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+}
+
+.about-flor {
+	width: 40%;
+	border-radius: 50%;
+	padding: 0 1.25rem;
+}
+.btn-neon {
+	margin: 1.25rem 3.75rem;
+
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	border-radius: 6px;
+	-webkit-text-fill-color: transparent;
+	background-image: var(--gradient);
+	background-clip: text;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+.btn-neon::before,
+.btn-neon {
+	border: 3px solid transparent;
+	border-image: var(--gradient);
+	border-image-slice: 1%;
+}
+.btn-neon::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	transform: translate(1px, 5px);
+	filter: blur(5px);
+	transition: all 100ms;
+}
+.btn-neon:hover::before {
+	transform: translateY(-2px);
+}
+@media screen and (max-width: 768px) {
+	.about-img {
+		flex-direction: column;
+	}
+	.about-flor {
+		width: 90%;
+	}
+	.about-paraf {
+		padding: 20px 0;
+		font-size: 1rem;
+		text-align: center;
+	}
+	.about-title {
+		margin-bottom: 1.25rem;
+		font-size: 1.1rem;
+	}
+	.btn-neon {
+		margin: 1.25rem 6.25rem;
+	}
+}

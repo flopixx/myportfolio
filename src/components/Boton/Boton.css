@@ -1,0 +1,37 @@
+.boton-welcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn {
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	border-radius: 6px;
+	-webkit-text-fill-color: transparent;
+	background-image: var(--gradient);
+	background-clip: text;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.btn::before,
+.btn {
+	border: 3px solid transparent;
+	border-image: var(--gradient);
+	border-image-slice: 1%;
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	transform: translate(1px, 5px);
+	filter: blur(5px);
+	transition: all 100ms;
+}
+.btn:hover::before {
+	transform: translateY(-2px);
+}

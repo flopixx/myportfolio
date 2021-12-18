@@ -1,0 +1,116 @@
+.home-principal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.containerr {
+	max-width: 1200px;
+}
+
+.flor {
+	width: 250px;
+	border-radius: 70%;
+	text-align: center;
+	border: 6px dotted var(--dotted);
+}
+.hello {
+	line-height: 1;
+	padding: 10px 0;
+}
+.home-paraf {
+	margin-top: 1.25rem;
+}
+.home-icons i {
+	width: 50px;
+	height: 50px;
+	color: #000;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	margin: 0 10px;
+	text-align: center;
+	transition: 0.5s;
+	background: #f7ff00; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#db36a4,
+		#f7ff00
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#db36a4,
+		#f7ff00
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.home-icons .fab {
+	font-size: 25px;
+	line-height: 50px;
+
+	z-index: 10;
+	transition: color 0.5s;
+}
+.home-icons {
+	margin-top: 20px;
+}
+.hello-home {
+	color: #fafafa;
+	font-family: "Playfair Display", serif;
+}
+h2 {
+	color: #f80759;
+	font-family: "Playfair Display", serif;
+}
+.contacte-icons {
+	margin-top: 30px;
+}
+.contactme {
+	margin-left: 10px;
+}
+.contactme {
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: hsl(317 100% 54%);
+	padding: 0.25rem 1rem;
+	border-radius: 10px;
+	border: currentColor 0.125rem solid;
+	text-shadow: 0 0 0 0.125rem currentColor;
+	box-shadow: inset 0 0 0.5rem 0 hsl(317 100% 54%),
+		0 0 0.5rem 0 hsl(317 100% 54%);
+	font-weight: bold;
+	font-family: "Playfair Display", serif;
+}
+.contactme:hover {
+	background: hsl(317 100% 54%);
+	color: #fafafa;
+	border: currentColor 0.125rem solid;
+	text-shadow: 0 0 0 0.125rem currentColor;
+	box-shadow: inset 0 0 0.5rem 0 hsl(317 100% 54%),
+		0 0 0.5rem 0 hsl(317 100% 54%);
+}
+@media screen and (min-width: 768px) {
+	.home-principal {
+		flex-direction: row;
+	}
+	.contactme {
+		font-size: 1.3rem;
+		cursor: pointer;
+		color: hsl(317 100% 54%);
+		padding: 0.25rem 1rem;
+		border-radius: 10px;
+		border: currentColor 0.125rem solid;
+		text-shadow: 0 0 0 0.125rem currentColor;
+		box-shadow: inset 0 0 0.5rem 0 hsl(317 100% 54%),
+			0 0 0.5rem 0 hsl(317 100% 54%);
+		font-weight: bold;
+		font-family: "Playfair Display", serif;
+	}
+	.contactme:hover {
+		background: hsl(317 100% 54%);
+		color: #fafafa;
+		border: currentColor 0.125rem solid;
+		text-shadow: 0 0 0 0.125rem currentColor;
+		box-shadow: inset 0 0 0.5rem 0 hsl(317 100% 54%),
+			0 0 0.5rem 0 hsl(317 100% 54%);
+	}
+}

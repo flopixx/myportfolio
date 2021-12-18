@@ -1,0 +1,10 @@
+.bodyy {
+	background-image: linear-gradient(90deg, #ff69c8 0, #ffe742 50%, #87fffb);
+
+	display: block;
+	height: 7px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
