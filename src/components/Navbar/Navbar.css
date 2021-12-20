@@ -1,0 +1,141 @@
+header {
+	padding: 0.625rem 2.1875rem;
+}
+.content-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.navlist {
+	margin-right: 15px;
+}
+.navegation {
+	display: flex;
+	justify-content: space-between;
+}
+
+header .navegation {
+	height: 70px;
+}
+.menu,
+span {
+	display: none;
+	color: white;
+}
+
+.navlist {
+	color: #ffedbc;
+	font-family: Delius Swash Caps;
+	font-weight: bold;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+.wavy {
+	text-decoration: underline wavy #f80759;
+	text-underline-offset: 9px;
+}
+@media screen and (max-width: 768px) {
+	.navegation img {
+		width: 120px;
+		height: inherit;
+	}
+	span {
+		z-index: 999;
+	}
+	.menu,
+	span {
+		display: flex;
+		color: white;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
+		height: 35px;
+		z-index: 100;
+		cursor: pointer;
+		position: fixed;
+		right: 2rem;
+	}
+	.circle {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		right: 0;
+		top: 0;
+		z-index: 40;
+		flex-direction: column;
+		transition: all 1s ease;
+		background: #8a2387; /* fallback for old browsers */
+		background: -webkit-linear-gradient(
+			to right,
+			#f27121,
+			#e94057,
+			#8a2387
+		); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(
+			to right,
+			#f27121,
+			#e94057,
+			#8a2387
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		clip-path: circle(0% at 100% 0%);
+		clip-path: circle(
+			0% at 100% 0
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	.circleopen {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		right: 0;
+		top: 0;
+		z-index: 40;
+		flex-direction: column;
+		transition: all 1s ease;
+		background: #8a2387; /* fallback for old browsers */
+		background: -webkit-linear-gradient(
+			to right,
+			#f27121,
+			#e94057,
+			#8a2387
+		); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(
+			to right,
+			#f27121,
+			#e94057,
+			#8a2387
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		clip-path: circle(150% at 100% 0%);
+		clip-path: circle(150% at 100% 0%);
+	}
+	.wavy {
+		text-decoration: underline wavy #d62ad0;
+		text-underline-offset: 0.4375rem;
+	}
+
+	.navlist {
+		font-size: 1rem;
+	}
+
+	.content-nav {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 100%;
+	}
+	.content .navlist {
+		margin-right: 0;
+	}
+	.navegation {
+		display: flex;
+		justify-content: space-between;
+	}
+}

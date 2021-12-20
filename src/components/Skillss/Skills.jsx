@@ -12,7 +12,7 @@ const Skills = () => {
 	return (
 		<>
 			<h3 className='skills-title'>Skills</h3>
-			<section className='skills containeer'>
+			<section className='skills containeer' id='skills'>
 				<div className='skills-icons' data-aos='zoom-in-up'>
 					<img src={html} alt='' className='icons-skill' />
 					<img src={css} alt='' className='icons-skill' />

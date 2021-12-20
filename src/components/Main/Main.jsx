@@ -4,6 +4,7 @@ import flor from "../img/flor.png";
 import { init } from "ityped";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-scroll";
 
 const Main = () => {
 	const text = useRef();
@@ -24,19 +25,24 @@ const Main = () => {
 	}, []);
 	return (
 		<main>
-			<div className='home-principal'>
-				<div className='containerr'>
+			<div className='main-principal' id='home'>
+				<div className='container-main'>
 					<div data-aos='fade-left'>
 						<img src={flor} alt='' className='flor' />
 						<div className='hello'>
-							<h1 className='hello-home'>
-								Hi! ,<span>IM FLORENCIA </span>{" "}
-							</h1>
+							<h1 className='hello-home'>Hi! IM FLORENCIA </h1>
 							<h2 ref={text}></h2>
 						</div>
 					</div>
 					<div className='contacte-icons' data-aos='zoom-in-up'>
-						<button className='contactme'>Contact Me</button>
+						<Link
+							to='contactme'
+							smooth={true}
+							duration={1000}
+							className='contactme'
+						>
+							Contact Me
+						</Link>
 						<div className='home-icons'>
 							<a
 								href='https://www.linkedin.com/in/florencia-velazquez-0121951b7/'

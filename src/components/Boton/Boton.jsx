@@ -6,7 +6,7 @@ const Boton = ({ mensaje }) => {
 	return (
 		<div className='boton-welcome'>
 			<Link to='/home'>
-				<button className='btn animate__animated animate__bounce'>
+				<button className='btn animate__animated animate__backInUp'>
 					{mensaje}
 				</button>
 			</Link>
