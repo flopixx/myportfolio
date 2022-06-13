@@ -4,10 +4,12 @@
 	font-family: Delius Swash Caps;
 }
 .contactme-descripcion {
-	color: #ffedbc;
-	padding: 70px 400px;
+	color: #fffcdc;
 	line-height: 30px;
 	font-size: 1.2rem;
+	font-family: "PT Mono", monospace;
+	width: 100%;
+	text-align: center;
 }
 .container-contact {
 	max-width: 1100px;
@@ -54,24 +56,6 @@
 		transform: translateY(0%);
 	}
 }
-.contactme-descripcion {
-	font-family: "Poppins", sans-serif;
-}
-.btn-contact {
-	width: 150px;
-	padding: 6px 10px;
-	font-weight: bold;
-	border-radius: 20px;
-	-webkit-text-fill-color: transparent;
-	background-image: var(--gradient);
-	background-clip: text;
-	font-size: 1.2rem;
-	cursor: pointer;
-	margin: auto;
-	line-height: 1;
-	margin-bottom: 1.25rem;
-	font-family: "Playfair Display", serif;
-}
 
 .btn-contact::before,
 .btn-contact {
@@ -102,17 +86,169 @@
 	min-width: 1400px;
 	min-width: 100%;
 }
+.contact__form {
+	display: none;
+	display: block;
+	opacity: 0;
+	animation: fadeInUp 2s 2s;
+	animation-fill-mode: forwards;
+}
+.section__title {
+	color: wheat;
+	text-align: center;
+	font-family: "Delius Swash Caps", cursive;
+	font-size: 2.1rem;
+}
 
+.contact__title {
+	color: #fffcdc;
+	font-family: "Poppins", sans-serif;
+}
+.contact__subtitle {
+	color: hsl(35, 8%, 65%);
+	font-family: "Poppins", sans-serif;
+}
+
+.contact__information {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.contact__icon {
+	font-size: 2rem;
+	color: #89216b;
+	margin-right: 20px;
+}
+
+.contact__title {
+	text-align: left;
+}
+
+.contact__label {
+	color: #fffcdc;
+	text-align: left;
+	margin-top: 1.2rem;
+	font-family: "Poppins", sans-serif;
+}
+.contact__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.contact__input {
+	width: 40%;
+	background-color: #fdf5e6;
+	border-radius: 0.5rem;
+	padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+	border: none;
+	outline: none;
+}
+textarea {
+	width: 40%;
+	height: 200px;
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	border-radius: 0.5rem;
+	background-color: #fdf5e6;
+	line-height: 2rem;
+	resize: vertical;
+}
+.contact__input:focus,
+textarea:focus {
+	outline: 2px solid hsl(317 100% 54%);
+}
+.button_contact {
+	text-align: center;
+	margin-top: 1.2rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: white;
+	background-color: hsl(317 100% 54%);
+	width: 20%;
+	border-radius: 10px;
+	margin-right: 450px;
+	border: none;
+	box-shadow: inset 0 0 0.5rem 0 hsl(317 100% 54%),
+		0 0 0.5rem 0 hsl(317 100% 54%);
+	font-weight: bold;
+	font-family: "Playfair Display", serif;
+}
 @media screen and (max-width: 768px) {
 	.contactme-title {
-		color: rgb(250, 87, 163);
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 	.contactme-descripcion {
 		color: #ffedbc;
-		padding: 10px 30px;
 		text-align: center;
 		line-height: 30px;
 		font-size: 1.1rem;
+	}
+	.section__title {
+		color: wheat;
+		text-align: center;
+		font-family: "Delius Swash Caps", cursive;
+		font-size: 1.4rem;
+	}
+
+	.contact__title {
+		color: #fffcdc;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.1rem;
+	}
+	.contact__subtitle {
+		color: hsl(35, 8%, 65%);
+		font-family: "Poppins", sans-serif;
+	}
+
+	.contact__information {
+		display: flex;
+		margin-bottom: 10px;
+	}
+
+	.contact__icon {
+		font-size: 2rem;
+		color: #89216b;
+		margin-right: 20px;
+	}
+
+	.contact__title {
+		text-align: left;
+	}
+
+	.contact__label {
+		color: #fffcdc;
+		text-align: left;
+		margin-top: 1.2rem;
+		font-family: "Poppins", sans-serif;
+	}
+	.contact__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.contact__input {
+		width: 90%;
+		background-color: #fdf5e6;
+		border-radius: 0.5rem;
+		padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+		border: none;
+		outline: none;
+	}
+	textarea {
+		width: 90%;
+		border-radius: 0.5rem;
+		background-color: #fdf5e6;
+	}
+	.button_contact {
+		margin-top: 1.2rem;
+		font-size: 1.2rem;
+		cursor: pointer;
+		color: white;
+		width: 40%;
+		border-radius: 10px;
+
+		box-shadow: inset 0 0 0.5rem 0 hsl(317 100% 54%),
+			0 0 0.5rem 0 hsl(317 100% 54%);
+		font-weight: bold;
+		font-family: "Playfair Display", serif;
 	}
 }

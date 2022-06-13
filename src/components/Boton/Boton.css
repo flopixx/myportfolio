@@ -13,6 +13,7 @@
 	background-clip: text;
 	font-size: 1.2rem;
 	cursor: pointer;
+	font-family: "Playfair Display", serif;
 }
 
 .btn::before,

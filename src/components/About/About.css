@@ -1,33 +1,33 @@
-.about-img {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-.container {
+.about__container {
 	width: 90%;
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 60px 0;
 }
 
-.about-title {
+.about__image {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.about__title {
 	color: wheat;
 	text-align: center;
 	font-family: "Delius Swash Caps", cursive;
 	font-size: 2.1rem;
 }
-.about-paraf {
-	color: white;
+.about__paragraf {
+	color: #fffcdc;
 	width: 80%;
-	margin: 0 auto;
-	font-family: "Poppins", sans-serif;
+	margin: 1.2rem auto;
+	font-family: "PT Mono", monospace;
 	font-weight: 700;
 	letter-spacing: 1px;
 	font-size: 1.2rem;
 }
 
-.about-flor {
+.about__imageflor {
 	width: 40%;
 	border-radius: 50%;
 	padding: 0 1.25rem;
@@ -66,20 +66,20 @@
 	transform: translateY(-2px);
 }
 @media screen and (max-width: 768px) {
-	.about-img {
+	.about__image {
 		flex-direction: column;
 	}
-	.about-flor {
+	.about__imageflor {
 		width: 90%;
 	}
-	.about-paraf {
+	.about__paragraf {
 		padding: 20px 0;
 		font-size: 1rem;
 		text-align: center;
 	}
-	.about-title {
+	.about__title {
 		margin-bottom: 1.25rem;
-		font-size: 1.1rem;
+		font-size: 1.4rem;
 	}
 	.btn-neon {
 		margin: 1.25rem 6.25rem;

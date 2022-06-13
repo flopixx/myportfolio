@@ -1,4 +1,4 @@
-.containeer {
+.skills__container {
 	max-width: 1100px;
 	margin: auto;
 	padding: 5.625rem 0;
@@ -6,39 +6,40 @@
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.skills-icons {
+.skills__icons {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 2.2rem;
 }
-.icons-skill {
+.icons__skill {
 	width: 100px;
 	margin-right: 1.25rem;
 }
-.skills-title {
+.skills__title {
 	color: wheat;
 	text-align: center;
 	font-family: "Delius Swash Caps", cursive;
 	font-size: 2.1rem;
 	margin-top: 2.5rem;
 }
+
 @media screen and (max-width: 768px) {
-	.containeer {
+	.skills__container {
 		max-width: 1100px;
 		margin: auto;
 		padding: 5.625rem 0;
 		display: flex;
 		justify-content: center;
 	}
-	.icons-skill {
+	.icons__skill {
 		width: 50px;
 		margin-right: 0;
 	}
-	.skills-title {
+	.skills__title {
 		color: wheat;
 		text-align: center;
 		font-family: "Delius Swash Caps", cursive;
-		font-size: 1.1rem;
+		font-size: 1.4rem;
 		margin-top: 2.5rem;
 	}
 }

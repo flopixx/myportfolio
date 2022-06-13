@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 import "./Navbar.css";
+import { BiMenuAltRight } from "react-icons/bi";
 
 const Navbar = () => {
 	const [isOpen, setopen] = useState(false);
@@ -12,18 +13,18 @@ const Navbar = () => {
 	};
 	return (
 		<header>
-			<div className='navegation'>
+			<div className='navbar__navegation'>
 				<Link to='/Homecarts'></Link>
-				<div className='menu' onClick={handleclick}>
-					<div>&#9776;</div>
+				<div className='navbar__menu' onClick={handleclick}>
+					<BiMenuAltRight className='navbar__icon' />
 				</div>
 				<div className={isOpen ? "circleopen" : "circle"}>
-					<div className='content-nav'>
+					<div className='navbar__container'>
 						<Link
 							to='Home'
 							smooth={true}
 							duration={1000}
-							className='navlist wavy'
+							className='navbar__links wavy'
 						>
 							Home
 						</Link>
@@ -31,7 +32,7 @@ const Navbar = () => {
 							to='about'
 							smooth={true}
 							duration={1000}
-							className='navlist wavy'
+							className='navbar__links wavy'
 						>
 							About
 						</Link>
@@ -40,7 +41,7 @@ const Navbar = () => {
 							to='skills'
 							smooth={true}
 							duration={1000}
-							className='navlist wavy'
+							className='navbar__links wavy'
 						>
 							Skills
 						</Link>
@@ -48,7 +49,7 @@ const Navbar = () => {
 							to='portfolios'
 							smooth={true}
 							duration={1000}
-							className='navlist wavy'
+							className='navbar__links wavy'
 						>
 							Portfolio
 						</Link>
@@ -56,9 +57,9 @@ const Navbar = () => {
 							to='contactme'
 							smooth={true}
 							duration={1000}
-							className='navlist wavy'
+							className='navbar__links wavy'
 						>
-							Contactme
+							Contact
 						</Link>
 					</div>
 				</div>

@@ -19,13 +19,13 @@ import proyect15 from "../portfolio-imgs/Sakura-clear.png";
 const Portfolios = () => {
 	return (
 		<>
-			<h3 className='portfolio-title'>Portfolio</h3>
+			<h3 className='portfolios__title'>Portfolio</h3>
 			<section
-				className='portfolios-container'
+				className='porfolios__section'
 				data-aos='zoom-in-up'
 				id='portfolios'
 			>
-				<div className='portfolio gridd'>
+				<div className='portfolios__container '>
 					<Portfolio
 						image={proyect1}
 						title='Base Aparel'

@@ -25,25 +25,25 @@ const Main = () => {
 	}, []);
 	return (
 		<main>
-			<div className='main-principal' id='home'>
-				<div className='container-main'>
+			<div className='main__first' id='home'>
+				<div className='main__container'>
 					<div data-aos='fade-left'>
 						<img src={flor} alt='' className='flor' />
-						<div className='hello'>
-							<h1 className='hello-home'>Hi! IM FLORENCIA </h1>
+						<div className='main__hello'>
+							<h1 className='main__title'>Hi! I'M FLORENCIA </h1>
 							<h2 ref={text}></h2>
 						</div>
 					</div>
-					<div className='contacte-icons' data-aos='zoom-in-up'>
+					<div className='main__container__icons' data-aos='zoom-in-up'>
 						<Link
 							to='contactme'
 							smooth={true}
 							duration={1000}
-							className='contactme'
+							className='main__contactme'
 						>
 							Contact Me
 						</Link>
-						<div className='home-icons'>
+						<div className='main__icons'>
 							<a
 								href='https://www.linkedin.com/in/florencia-velazquez-0121951b7/'
 								target='_blank'
